@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.ff-poppins { font-family: 'Poppins', sans-serif; }
+.ff-roboto { font-family: 'Roboto', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.125;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  padding: 4.5rem;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.botao {
+    background: #FE4F30;
+    color: #ffffff;
+    max-width: 270px;
+    width: 250px;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+  
+  .botao:hover {
+    background: #C9432B;
+  }
+
+@media (max-width: 800px) {
+  .container {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.125rem;
+  }
+}

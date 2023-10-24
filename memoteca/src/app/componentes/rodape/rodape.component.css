@@ -1,0 +1,23 @@
+.rodape{
+  background: linear-gradient(180deg, #E7DAF8 0%, #FFEFEC 100%);
+}
+
+.rodape p{
+  color: #6E6E6E;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .rodape p{
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .rodape p{
+      font-size: 0.87rem;
+  }
+}
+
+
