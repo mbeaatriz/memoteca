@@ -1,0 +1,183 @@
+.criar-pensamento h1{
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom:3.5rem;
+  text-align: center;
+}
+
+.criar-pensamento-form-bg{
+  background: linear-gradient(180deg, #E7DAF8 0%, #FFEFEC 100%);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.criar-pensamento-form{
+  display: grid;
+  gap: 30px;
+}
+
+.criar-pensamento-form label{
+  display: block;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.criar-pensamento-form input[type="text"],
+.criar-pensamento-form textarea {
+  font: 400 1rem "Roboto", sans-serif;
+  display: block;
+  background: #fff;
+  border: #e2e2e2;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.criar-pensamento-form input[type="text"]:focus,
+.criar-pensamento-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #FFBE9D;
+}
+
+.criar-pensamento-radio{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.radio-modelo{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.modelo-previa-bg{
+  padding:20px;
+  border-radius: 16px;
+  margin-top: 16px;
+}
+
+.previa-bg-cor-1{
+  background: #FFBE9D;
+}
+
+.previa-bg-cor-2{
+  background: #CDACFF;
+}
+
+.previa-bg-cor-3{
+  background: #B5D3FF;
+}
+
+.modelo-previa{
+  display: grid;
+  gap:16px;
+}
+
+.radio-modelo {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-modelo input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-modelo:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-modelo input:checked ~ .checkmark {
+  background-color: #FE4F30;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-modelo input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-modelo .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.texto-pensamento{
+  font: 400 1rem "Roboto", sans-serif;
+  color:#333;
+}
+
+.texto-autoria{
+  font: 600 1rem "Poppins", sans-serif;
+  color:#333;
+}
+
+.criar-pensamento-form-acoes{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .criar-pensamento h1{
+      font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .criar-pensamento h1{
+      font-size: 2rem;
+      padding-bottom: 3rem;
+  }
+  .criar-pensamento-radio{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .criar-pensamento h1{
+    padding-bottom: 1.125rem;
+  }
+  .criar-pensamento-form-bg{
+    padding: 20px;
+  }
+  .criar-pensamento-form{
+    gap: 20px;
+  }
+}

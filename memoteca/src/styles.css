@@ -44,15 +44,17 @@ img {
 
 .botao {
     background: #FE4F30;
+    font: 600 1rem "Poppins", sans-serif;
     color: #ffffff;
     max-width: 270px;
     width: 250px;
     padding: 1rem;
-    margin: 0 auto;
     border-radius: 10px;
     transition: 0.5s ease;
+    cursor: pointer;
+    border: none;
   }
-  
+
   .botao:hover {
     background: #C9432B;
   }
