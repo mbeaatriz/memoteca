@@ -5,25 +5,25 @@
   text-align: center;
 }
 
-.criar-pensamento-form-bg{
+.pensamento-form-bg{
   background: linear-gradient(180deg, #E7DAF8 0%, #FFEFEC 100%);
   padding: 40px;
   border-radius: 20px;
 }
 
-.criar-pensamento-form{
+.pensamento-form{
   display: grid;
   gap: 30px;
 }
 
-.criar-pensamento-form label{
+.pensamento-form label{
   display: block;
   color: #333333;
   margin-bottom: 10px;
 }
 
-.criar-pensamento-form input[type="text"],
-.criar-pensamento-form textarea {
+.pensamento-form input[type="text"],
+.pensamento-form textarea {
   font: 400 1rem "Roboto", sans-serif;
   display: block;
   background: #fff;
@@ -34,13 +34,13 @@
   box-sizing: border-box;
 }
 
-.criar-pensamento-form input[type="text"]:focus,
-.criar-pensamento-form textarea:focus {
+.pensamento-form input[type="text"]:focus,
+.pensamento-form textarea:focus {
   outline: none;
   box-shadow: 0 0 0 2px #FFBE9D;
 }
 
-.criar-pensamento-radio{
+.pensamento-radio{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
@@ -137,7 +137,7 @@
 	background: white;
 }
 
-.texto-pensamento{
+.texto-conteudo{
   font: 400 1rem "Roboto", sans-serif;
   color:#333;
 }
@@ -147,7 +147,7 @@
   color:#333;
 }
 
-.criar-pensamento-form-acoes{
+.pensamento-form-acoes{
   display: flex;
   gap: 16px;
   justify-content: center;
@@ -165,7 +165,7 @@
       font-size: 2rem;
       padding-bottom: 3rem;
   }
-  .criar-pensamento-radio{
+  .pensamento-radio{
     grid-template-columns: 1fr;
   }
 }
@@ -174,10 +174,10 @@
   .criar-pensamento h1{
     padding-bottom: 1.125rem;
   }
-  .criar-pensamento-form-bg{
+  .pensamento-form-bg{
     padding: 20px;
   }
-  .criar-pensamento-form{
+  .pensamento-form{
     gap: 20px;
   }
 }
